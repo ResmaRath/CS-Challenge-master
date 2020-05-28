@@ -30,13 +30,14 @@ namespace JokeGenerator
                         getCategories();
                         PrintResults();
                     }
-                    if (key == 'r')
+                    else if (key == 'r')
                     {
-                        printer.Value("Want to use a random name? y/n").ToString();
-                        GetEnteredKey(Console.ReadKey());
-                        if (key == 'y')
-                            GetNames();
+                        // printer.Value("Want to use a random name? y/n").ToString();
+                        // GetEnteredKey(Console.ReadKey());
+                        // if (key == 'y')
+                        //     GetNames();
                         printer.Value("Want to specify a category? y/n").ToString();
+                        GetEnteredKey(Console.ReadKey());
                         if (key == 'y')
                         {
                             printer.Value("How many jokes do you want? (1-9)").ToString();
@@ -115,7 +116,7 @@ namespace JokeGenerator
 
         private static void getCategories()
         {
-            new JsonFeed("https://api.chucknorris.io", 0);
+            new JsonFeed("https://api.chucknorris.io/jokes/categories", 0);
             results = JsonFeed.GetCategories();
         }
 
