@@ -9,8 +9,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "JokeCompany.JokeGenerator.H
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "JokeCompany.JokeGenerator.ExternalFeeds", "JokeCompany.JokeGenerator.ExternalFeeds\JokeCompany.JokeGenerator.ExternalFeeds.csproj", "{3F3354E6-0369-43DC-91A5-6D09BCD4FA17}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "JokeCompany.JokeGenerator.Helpers.Test", "JokeCompany.JokeGenerator.Helpers.Test\JokeCompany.JokeGenerator.Helpers.Test.csproj", "{634C4DA5-6CE5-432D-A2FC-B69A3AB31A0F}"
-EndProject
+
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
