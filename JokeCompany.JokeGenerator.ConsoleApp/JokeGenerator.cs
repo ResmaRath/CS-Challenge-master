@@ -2,7 +2,7 @@
 using System.Text;
 using JokeCompany.JokeGenerator.Helpers;
 
-namespace JokeCompany.JokeGenerator
+namespace JokeCompany.JokeGenerator.ConsoleApp
 {
     public class JokeGenerator
     {
