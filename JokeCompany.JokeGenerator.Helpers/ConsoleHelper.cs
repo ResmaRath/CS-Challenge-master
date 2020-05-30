@@ -47,17 +47,10 @@ namespace JokeCompany.JokeGenerator.Helpers
 
         public string PromptForListSelection(string header, IEnumerable<string> possibleAnswers)
         {
-            if (string.IsNullOrWhiteSpace(header))
-            {
-                throw new ArgumentException("No header was provided.", nameof(header));
-            }
-
-            var sortedAnswers = possibleAnswers?.Where(p => p != null).OrderBy(p => p).ToList() ?? new List<string>();
-
-            if (sortedAnswers?.Any() != true)
-            {
-                throw new ArgumentException("No answers were provided to choose from.", nameof(sortedAnswers));
-            }
+            var sortedAnswers = possibleAnswers?
+                                .Where(p => p != null)
+                                .OrderBy(p => p)
+                                .ToList() ?? new List<string>();
 
             while (true)
             {
@@ -79,12 +72,13 @@ namespace JokeCompany.JokeGenerator.Helpers
                     {
                         if (sortedAnswers.Count >= index && index > 0)
                         {
-                            return sortedAnswers[index - 1]; // Adjust because we started at 1 instead of 0.
+                            return sortedAnswers[index - 1];
                         }
                     }
                     else
                     {
-                        var match = sortedAnswers.FirstOrDefault(a => a.Equals(answer, StringComparison.InvariantCultureIgnoreCase));
+                        var match = sortedAnswers
+                                    .FirstOrDefault(a => a.Equals(answer, StringComparison.InvariantCultureIgnoreCase));
 
                         if (match != default)
                         {

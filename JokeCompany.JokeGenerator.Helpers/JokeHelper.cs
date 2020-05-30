@@ -11,10 +11,10 @@ namespace JokeCompany.JokeGenerator.Helpers
         private readonly IChuckNorrisJsonProvider _jokeFeed;
         private readonly IRandomNameProvider _randomNameFeed;
 
-        public JokeHelper(IChuckNorrisJsonProvider jokeFeed, IRandomNameProvider randomNameFeed)
+        public JokeHelper()
         {
-            _jokeFeed = jokeFeed;
-            _randomNameFeed = randomNameFeed;
+            _jokeFeed = new ChuckNorrisJsonProvider();
+            _randomNameFeed =  new RandomNameProvider();
         }
 
         public IEnumerable<string> GetRandomJokes(int jokeCount, string category = null, string nameToReplace = null)
@@ -28,7 +28,7 @@ namespace JokeCompany.JokeGenerator.Helpers
 
                 var finalJoke = useReplacementName ? result.Replace(nameToReplace, replacementName) : result;
 
-                yield return finalJoke; // Return jokes as we get them for nicer UX.
+                yield return finalJoke;
             }
         }
 

@@ -1,6 +1,5 @@
 ﻿using System;
 using System.Text;
-using JokeCompany.JokeGenerator.ExternalFeeds;
 using JokeCompany.JokeGenerator.Helpers;
 
 namespace JokeCompany.JokeGenerator
@@ -13,7 +12,9 @@ namespace JokeCompany.JokeGenerator
 
         static void Main()
         {
-            InstantiateHelperClass();
+            _jokeHelper = new JokeHelper();
+            _consoleHelper = new ConsoleHelper(Encoding.UTF8);
+
             DisplayIntroduction();
             GenerateJokes();
             DisplayEndMessage();
@@ -50,13 +51,7 @@ namespace JokeCompany.JokeGenerator
 
             }
         }
-        private static void InstantiateHelperClass()
-        {
-            var chuckNorrisJsonProvider = new ChuckNorrisJsonProvider();
-            var randomNameProvider = new RandomNameProvider();
-            _jokeHelper = new JokeHelper(chuckNorrisJsonProvider, randomNameProvider);
-            _consoleHelper = new ConsoleHelper(Encoding.UTF8);
-        }
+
         private static void DisplayIntroduction()
         {
             _consoleHelper.WriteLine($"Welcome to Joke Company. Please follow the instruction to find some amaizing Chuck Norris jokes \n");

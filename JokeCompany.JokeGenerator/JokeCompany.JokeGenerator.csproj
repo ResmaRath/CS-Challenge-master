@@ -10,9 +10,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\JokeCompany.JokeGenerator.ExternalFeeds\JokeCompany.JokeGenerator.ExternalFeeds.csproj" />
-     <ProjectReference Include="..\JokeCompany.JokeGenerator.Helpers\JokeCompany.JokeGenerator.Helpers.csproj" />
-
+       <ProjectReference Include="..\JokeCompany.JokeGenerator.Helpers\JokeCompany.JokeGenerator.Helpers.csproj" />
   </ItemGroup>
 
 </Project>
