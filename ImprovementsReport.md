@@ -1,5 +1,5 @@
 Fixed Bugs
- 1. Instructions are not user friendly. Like "Press ? for more instruction" doesn't seem like a good start.
+ 1. Instructions are not user friendly. Like "Press ? for more instructions" doesn't seem like a good start. Changed it to a Welcome message.
  2. User Input c to get categories throws an exception. Reason- It was trying to access wrong url. right url is https://api.chucknorris.io/jokes/categories
         "Unhandled exception. System.AggregateException: One or more errors occurred. 404 error"
  3. Returned Categories are hard to read due to the formatting.
@@ -11,16 +11,16 @@ Fixed Bugs
  7. There is no exit from the application.
  8. Instuction/ Questions are hard to read as they get embedded in response of the user.
     e.g - rWant to use a random name? y/n
- 9. Invalid input throughs an exception, but no friendly message that a user can understand
+ 9. Invalid input throws an exception, but no friendly message that a user can understand
 
 Improvements in Code base 
 
 Console App <---> Helper Methods (Can be called as Manager or Controller) <-----> ExternalFeed methods (Providers)
 
 1.  Naming appropriately is very important. I have changed the following names.
-   - Renamed ConsoleApp1 namespace to JokeCompany.JokeGenerator.ConsoleApp namespace 
-   - Renamed ConsoleApp1 Folder to JokeCompany.JokeGenerator.ConsoleApp Folder
-   - Renamed Program.cs to JokeGenerator.cs
+    - Renamed ConsoleApp1 namespace to JokeCompany.JokeGenerator.ConsoleApp namespace 
+    - Renamed ConsoleApp1 Folder to JokeCompany.JokeGenerator.ConsoleApp Folder
+    - Renamed Program.cs to JokeGenerator.cs
 
 2. Created class library "JokeCompany.JokeGenerator.Helpers" for Console helpers, String helpers and JokeHelpers (Its a manager class that talks to the Providers to get data, format it and return to frontend)
 
