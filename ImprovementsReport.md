@@ -11,3 +11,7 @@
     - Created ChuckNorrisJokeProvider/* that contains the providers that returns the JokeText and Joke Categories
     - Created RandomNameProvider/* that contains the providers which returns random names
 
+4. Created Test Project "JokeCompany.JokeGenerator.Helpers.Tests" 
+
+5. Created Test Project "JokeCompany.JokeGenerator.ExternalFeeds.Tests" 
+

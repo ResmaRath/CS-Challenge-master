@@ -1,9 +1,7 @@
-using System;
 using System.Linq;
 using NUnit.Framework;
-using JokeCompany.JokeGenerator.Helpers;
 
-namespace JokeCompany.JokeGenerator.Helpers.Testscd
+namespace JokeCompany.JokeGenerator.Helpers.Tests
 {
     [TestFixture]
     public class JokeHelperTests

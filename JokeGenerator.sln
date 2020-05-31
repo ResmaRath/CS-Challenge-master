@@ -11,6 +11,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "JokeCompany.JokeGenerator.E
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "JokeCompany.JokeGenerator.Helpers.Test", "JokeCompany.JokeGenerator.Helpers.Tests\JokeCompany.JokeGenerator.Helpers.Test.csproj", "{1CF5FA70-2315-4882-B069-93F7B3CA22FA}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "JokeCompany.JokeGenerator.ExternalFeeds.Tests", "JokeCompany.JokeGenerator.ExternalFeeds.Tests\JokeCompany.JokeGenerator.ExternalFeeds.Tests.csproj", "{917B5B6E-4227-4A81-9874-28360E89C73F}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -37,6 +39,10 @@ Global
 		{1CF5FA70-2315-4882-B069-93F7B3CA22FA}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{1CF5FA70-2315-4882-B069-93F7B3CA22FA}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{1CF5FA70-2315-4882-B069-93F7B3CA22FA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{917B5B6E-4227-4A81-9874-28360E89C73F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{917B5B6E-4227-4A81-9874-28360E89C73F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{917B5B6E-4227-4A81-9874-28360E89C73F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{917B5B6E-4227-4A81-9874-28360E89C73F}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
