@@ -13,7 +13,7 @@ Fixed Bugs
     e.g - rWant to use a random name? y/n
  9. Invalid input throughs an exception, but no friendly message that a user can understand
 
-Improvemets in Code base 
+Improvements in Code base 
 
 Console App <---> Helper Methods (Can be called as Manager or Controller) <-----> ExternalFeed methods (Providers)
 
