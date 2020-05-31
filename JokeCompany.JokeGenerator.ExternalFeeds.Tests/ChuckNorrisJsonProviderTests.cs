@@ -18,7 +18,6 @@ namespace JokeCompany.JokeGenerator.ExternalFeeds.Tests
         {
             var joke = _chuckNorrisJsonProvider.GetRandomJoke(null);
             Assert.IsNotNull(joke, "Returned a joke.");
-            StringAssert.Contains("Chuck Norris", joke);
         }
 
         [Test]
@@ -26,7 +25,6 @@ namespace JokeCompany.JokeGenerator.ExternalFeeds.Tests
         {
             var joke = _chuckNorrisJsonProvider.GetRandomJoke("food");
             Assert.IsNotNull(joke, "Returned a joke in food category");
-            StringAssert.Contains("Chuck Norris", joke);
         }
 
         [Test]

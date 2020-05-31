@@ -16,12 +16,11 @@ namespace JokeCompany.JokeGenerator.ExternalFeeds
             Handler = handler;
         }
 
-        // Simple factory method which returns a new <see cref="HttpClient"/>. Will insert <see cref="Handler"/> if provided for unit testing.
         protected internal HttpClient GetHttpClient()
         {
             var client = Handler != null ? new HttpClient(Handler) : new HttpClient();
             client.BaseAddress = new Uri(_baseUri);
-            
+
             return client;
         }
 
@@ -40,7 +39,7 @@ namespace JokeCompany.JokeGenerator.ExternalFeeds
                 {
                     var message = $"Failed to get response ({_baseUri}{requestUri}) "
                                     + "due to errors: {Environment.NewLine}{string.Join(Environment.NewLine, e.InnerExceptions.Select(i => i.Message))}";
-                    
+
                     throw new JsonFeedException(message, e);
                 }
             }
