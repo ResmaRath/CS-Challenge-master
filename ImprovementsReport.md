@@ -1,3 +1,22 @@
+Fixed Bugs
+ 1. Instructions are not user friendly. Like "Press ? for more instruction" doesn't seem like a good start.
+ 2. User Input c to get categories throws an exception. Reason- It was trying to access wrong url. right url is https://api.chucknorris.io/jokes/categories
+        "Unhandled exception. System.AggregateException: One or more errors occurred. 404 error"
+ 3. Returned Categories are hard to read due to the formatting.
+    [["animal","career","celebrity","dev","explicit","fashion","food","history","money","movie","music","political","religion","science","sport","travel"]]
+ 4. Get Random name Url seems to be outdated. The url http://uinames.com/api/ doesn't work. Replaced with   https://names.privserv.com/api/
+ 5. User can not enter a category option, even if User has entered "y" as response to the question "Want to specify a category?"
+ 6. Response for random name is being used for response to category selection
+ 6. Only one joke is displayed, even if User wishes to see more than one jokes
+ 7. There is no exit from the application.
+ 8. Instuction/ Questions are hard to read as they get embedded in response of the user.
+    e.g - rWant to use a random name? y/n
+ 9. Invalid input throughs an exception, but no friendly message that a user can understand
+
+Improvemets in Code base 
+
+Console App <---> Helper Methods (Can be called as Manager or Controller) <-----> ExternalFeed methods (Providers)
+
 1.  Naming appropriately is very important. I have changed the following names.
    - Renamed ConsoleApp1 namespace to JokeCompany.JokeGenerator.ConsoleApp namespace 
    - Renamed ConsoleApp1 Folder to JokeCompany.JokeGenerator.ConsoleApp Folder
