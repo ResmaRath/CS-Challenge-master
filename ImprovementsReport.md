@@ -1,4 +1,4 @@
-Fixed Bugs
+### Fixed Bugs ###
  1. Instructions are not user friendly. Like "Press ? for more instructions" doesn't seem like a good start. Changed it to a Welcome message.
  2. User Input c to get categories throws an exception. Reason- It was trying to access wrong url. right url is https://api.chucknorris.io/jokes/categories
         "Unhandled exception. System.AggregateException: One or more errors occurred. 404 error"
@@ -13,7 +13,7 @@ Fixed Bugs
     e.g - rWant to use a random name? y/n
  9. Invalid input throws an exception, but no friendly message that a user can understand
 
-Improvements in Code base 
+### Improvements in Code base ###
 
 Console App <---> Helper Methods (Can be called as Manager or Controller) <-----> ExternalFeed methods (Providers)
 
