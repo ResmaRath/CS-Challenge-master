@@ -8,8 +8,8 @@ namespace JokeCompany.JokeGenerator.Helpers
     /// </summary>
     public class JokeHelper
     {
-        private readonly IChuckNorrisJsonProvider _jokeFeed;
-        private readonly IRandomNameProvider _randomNameFeed;
+        private ChuckNorrisJsonProvider _jokeFeed;
+        private RandomNameProvider _randomNameFeed;
 
         public JokeHelper()
         {
